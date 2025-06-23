@@ -19,6 +19,7 @@ Le projet final est constitué de deux (2) applications séparées:
 
 2. **Application MLFLOW**
    Le modèle MLFLOW a été entrainé en local pour éviter les entrainements en ligne qui nécessite beaucoup de ressource. L'application déployée contient donc les modèles déjà preenregistrés et près à l'usage.
+   
    Pour déclencher l'entrainement du modèle en local, veuillez suivre ces consignes:
    1. Télécharger les données d'entrainement [ici](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
    2. Entrer dans le fichier, rennomer le dossier `chest_xray` en `data`
