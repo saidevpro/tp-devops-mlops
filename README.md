@@ -17,8 +17,12 @@ Le projet final est constitué de deux (2) applications séparées:
 1. **Application Web**
    Une application web réalisée avec le framework Flask proposant une interface graphique, constituée d'un champs input file qui prend une image en entrée et d'un bouton permettant de soumettre l'image choisie. La soumission de l'image fait appel à une requête asynchrone (en javascript) qui appel la route **`/predict`**. Dans le backend, l'appel du route enclenche une requête vers le serveur mlflow (route: **`/invocations`**) avec pour paramètre un tableau de donnée representant l'image. Cette requête retourne une réponse avec une probabilité.
 
-2. **Serveur MLFLOW**
+2. **Application MLFLOW**
    Le modèle MLFLOW a été entrainé en local pour éviter les entrainements en ligne qui nécessite beaucoup de ressource. L'application déployée contient donc les modèles déjà preenregistrés et près à l'usage.
+   Pour déclencher l'entrainement du modèle en local, veuillez suivre ces consignes:
+   1. Télécharger les données d'entrainement [ici](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
+   2. Entrer dans le fichier, rennomer le dossier `chest_xray` en `data`
+   3. Copier le dossier puis metter le dans le dossier `src` situé dans le dossier `mlflow`
 
 ## Architecture du projet
 
